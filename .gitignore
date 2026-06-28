@@ -1,0 +1,61 @@
+@'
+# Build results
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.so
+*.dylib
+
+# Visual Studio
+.vs/
+*.sln.iml
+*.user
+*.userosscache
+*.suo
+
+# User-specific files
+.vscode/
+*.swp
+*.swo
+*~
+
+# Dependencies
+packages/
+!packages/build/
+.nuget/
+
+# Database
+*.db
+*.sqlite
+orders.db
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# macOS
+.DS_Store
+
+# Node modules (se tiver)
+node_modules/
+
+# Docker
+docker-compose.override.yml
+
+# SonarQube
+.sonarqube/
+.sonarlint/
+
+# IDE
+.idea/
+*.iml
+
+# OS
+Thumbs.db
+'@ | Out-File -FilePath .gitignore -Encoding UTF8
